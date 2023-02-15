@@ -119,5 +119,18 @@
         <h3>Любимый фильм</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/QSc3uk8Q5w4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </main>
+    <form action="send">
+        <label>
+            <input id="phone-mask" type="tel" required placeholder="Введите Ваш номер телефона" name="user-phone-number">
+        </label>
+    </form>
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+        var element = document.getElementById('phone-mask');
+        var maskOptions = {
+        mask: '+{7}(000)000-00-00'
+        };
+        var mask = IMask(element, maskOptions);
+    </script>
 </body>
 </html>
