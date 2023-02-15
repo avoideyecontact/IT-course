@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Сайт по второй лабораторной работе дасциплины Интернет технологии">
+    <meta name="keywords" content="Интернет технологии, лабораторная, сайт, АПИБ-22, Прикладная информатика">
+    <meta name="author" content="Елшанский Владимир">
+    <title>Лабораторная 2</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0 auto;
+            max-width: 900px;
+        }
+
+        h2, h3 {
+            font-weight: lighter;
+        }
+
+        nav {
+            padding-bottom: 15px;
+        }
+
+        nav a {
+            transition: all 0.2s;
+            padding: 5px 20px;
+            border: 1px solid black;
+            text-decoration: none;
+            color: black;
+        }
+
+        nav a:hover {
+            transition: all 0.2s;
+            color: white;
+            background-color: gray;
+        }
+
+        nav a.current {
+            text-decoration: underline;
+        }
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info__block {
+            display: grid;
+            grid-template-columns: 200px 200px;
+            padding-left: 20px;
+            padding-bottom: 10px;
+        }
+
+        img {
+            max-width: 275px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Моя визитная карточка</h1>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="Interests.html">Увлечения</a>
+            <a class="current" href="#">Контакты</a>
+        </nav>
+    </header>
+    <main class="main">
+        <h2>Елшанский Владимир</h2>
+        <div class="info">
+            <div class="info__column">
+                <h3>Информация</h3>
+                <div class="info__block">
+                    <b>Направление подготовки</b>
+                    <span>Разработка компьютерных игр и AR/VR-приложений</span>
+                </div>
+                <div class="info__block">
+                    <b>Профиль</b>
+                    <span>---</span>
+                </div>
+                <div class="info__block">
+                    <b>Дата рождения</b>
+                    <time datetime="2004-10-06T22:10">6 октября 2004</time>
+                </div>
+                <div class="info__block">
+                    <b>Школа</b>
+                    <span>Многопрофильный лицей №1</span>
+                </div>
+                <div class="info__block">
+                    <b>Город рождения</b>
+                    <span>Магнитогорск</span>
+                </div>
+                <h3>Контакты</h3>
+                <div class="info__block">
+                    <b>Телефон</b>
+                    <a href="tel:+79193054714">+79193054714</a>
+                </div>
+                <div class="info__block">
+                    <b>Почта</b>
+                    <a href="mailto:vendetta_gt@mail.ru">vendetta_gt@mail.ru</a>
+                </div>
+                <div class="info__block">
+                    <b>ВК</b>
+                    <a href="https://vk.com/avoideyecontact">Елшанский Владимир</a>
+                </div>
+                <div class="info__block">
+                    <b>GitHub</b>
+                    <a href="https://github.com/avoideyecontact">avoideyecontact</a>
+                </div>
+            </div>
+            <div class="info__column">
+                <img src="https://sun9-west.userapi.com/sun9-64/s/v1/ig2/MLVKYZVhb6PU9gOaIdJiv8DpE_4cz2s-_2OlhhqJ_lAi1u7nXHFdeQkvlnPIC8VLVAm7DqS8pN9Ko70cBmj9YKI-.jpg?size=721x1080&quality=95&type=album" alt="">
+            </div>
+        </div>
+
+
+        <h3>Любимый фильм</h3>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QSc3uk8Q5w4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </main>
+</body>
+</html>
