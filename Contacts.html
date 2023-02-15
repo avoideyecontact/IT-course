@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,80 +9,111 @@
     <meta name="author" content="Елшанский Владимир">
     <title>Лабораторная 2</title>
     <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0 auto;
-            max-width: 900px;
-        }
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0 auto;
+        max-width: 900px;
+      }
 
-        h2, h3 {
-            font-weight: lighter;
-        }
+      h2,
+      h3 {
+        font-weight: lighter;
+      }
 
-        nav {
-            padding-bottom: 15px;
-        }
+      nav {
+        padding-bottom: 15px;
+      }
 
-        nav a {
-            transition: all 0.2s;
-            padding: 5px 20px;
-            border: 1px solid black;
-            text-decoration: none;
-            color: black;
-        }
+      nav a {
+        transition: all 0.2s;
+        padding: 5px 20px;
+        border: 1px solid black;
+        text-decoration: none;
+        color: black;
+      }
 
-        nav a:hover {
-            transition: all 0.2s;
-            color: white;
-            background-color: gray;
-        }
+      nav a:hover {
+        transition: all 0.2s;
+        color: white;
+        background-color: gray;
+      }
 
-        nav a.current {
-            text-decoration: underline;
-        }
+      nav a.current {
+        text-decoration: underline;
+      }
 
-        .info {
-            display: flex;
-            justify-content: space-between;
-        }
+      form {
+        display: flex;
+        flex-direction: column;
+        row-gap: 10px;
+      }
 
-        .info__block {
-            display: grid;
-            grid-template-columns: 200px 200px;
-            padding-left: 20px;
-            padding-bottom: 10px;
-        }
+      textarea {
+        min-width: 350px;
+        min-height: 100px;
+      }
 
-        img {
-            max-width: 275px;
-        }
+      button {
+        width: 250px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <header>
-        <h1>Написать мне</h1>
-        <nav>
-            <a href="index.html">Главная</a>
-            <a href="Interests.html">Увлечения</a>
-            <a class="current" href="#">Контакты</a>
-        </nav>
+      <h1>Написать мне</h1>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="Interests.html">Увлечения</a>
+        <a class="current" href="#">Контакты</a>
+      </nav>
     </header>
     <main class="main">
-        <h2>Елшанский Владимир</h2>
-        
+      <h2>Елшанский Владимир</h2>
     </main>
-    <form action="send">
-        <label>
-            <input id="phone-mask" type="tel" required placeholder="Введите Ваш номер телефона" name="user-phone-number">
-        </label>
+    <form action="https://echo.htmlacademy.ru/" id="form">
+      <label>
+        <input type="text" maxlength="20" required placeholder="Введите Ваше имя" name="user-name">
+      </label>
+      <label>
+        <input type="text" maxlength="20" required placeholder="Введите Ваш E-mail" name="user-email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+      </label>
+      <label>
+        <input id="phone-mask" type="tel" required placeholder="Введите Ваш номер телефона" name="user-phone-number">
+      </label>
+      <span>Как к вам обращаться?</span>
+      <label>
+        <input type="radio" name="pol" value="1" checked>
+        <span class="program-form__sign">Уважаемый</span>
+      </label>
+      <label>
+        <input type="radio" name="pol" value="2">
+        <span class="program-form__sign">Уважаемая</span>
+      </label>
+      <select size="1" name="reason" form="form">
+        <option selected value="Предложения">Предложение</option>
+        <option value="Дружба">Дружба</option>
+        <option disabled value="Жалоба">Жалоба</option>
+        <option value="Совместный проект">Совместный проект</option>
+      </select>
+      <label>
+        <textarea placeholder="Ваше сообщение" name="user-comment"></textarea>
+      </label>
+      <label>
+        <input type="file" name="file">
+      </label>
+      <label>
+        <input type="checkbox" name="agreement" value="Согласен" required>
+        <span>Согласен на обработку персональных данных</span>
+      </label>
+      <button type="submit" title="Кнопка отправки формы">Отправить письмо</button>
     </form>
     <script src="https://unpkg.com/imask"></script>
     <script>
-        var element = document.getElementById('phone-mask');
-        var maskOptions = {
+      var element = document.getElementById('phone-mask');
+      var maskOptions = {
         mask: '+{7}(000)000-00-00'
-        };
-        var mask = IMask(element, maskOptions);
+      };
+      var mask = IMask(element, maskOptions);
     </script>
-</body>
+  </body>
 </html>
