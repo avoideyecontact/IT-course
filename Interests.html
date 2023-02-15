@@ -45,6 +45,14 @@
             padding-bottom: 5px;
         }
 
+        table, th, td {
+            border: 1px solid black;
+            text-align: center;
+            vertical-align: middle;
+            min-width: 50px;
+            min-height: 50px;
+        }
+
     </style>
 </head>
 <body>
@@ -77,20 +85,20 @@
         <h3>Любимая музыка</h3>
             <table>
                 <tr>
-                    <th>1</th>
+                    <th colspan="2">1</th>
                     <th>2</th>
-                    <th>3</th>
                 </tr>
                 <tr>
-                    <th>bruh</th>
-                    <td>bruh</td>
-                    <td>bruh</td>
+                    <th>3</th>
+                    <td>4</td>
+                    <td>5</td>
                 </tr>
-                <th>bruh</th>
-                <td>bruh</td>
-                <td>bruh</td>
+                <th>5</th>
+                <td rowspan="2">6</td>
             </tr>
             </table>
+        <h3>Любмая картинка</h3>
+        <img src="dog.jpg" alt="Любимое фото" width="300" height="250">
         <h3>Любимый фильм</h3>
         <iframe width="560" height="315" src="https://www.youtube.com/embed/QSc3uk8Q5w4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </main>
