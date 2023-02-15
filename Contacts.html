@@ -71,5 +71,18 @@
         <h2>Елшанский Владимир</h2>
         
     </main>
+    <form action="send">
+        <label>
+            <input id="phone-mask" type="tel" required placeholder="Введите Ваш номер телефона" name="user-phone-number">
+        </label>
+    </form>
+    <script src="https://unpkg.com/imask"></script>
+    <script>
+        var element = document.getElementById('phone-mask');
+        var maskOptions = {
+        mask: '+{7}(000)000-00-00'
+        };
+        var mask = IMask(element, maskOptions);
+    </script>
 </body>
 </html>
