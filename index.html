@@ -7,40 +7,10 @@
     <meta name="description" content="Сайт-визитка по второй лабораторной работе дисциплины Интернет технологии">
     <meta name="keywords" content="Интернет технологии, лабораторная, сайт, АПИБ-22, Прикладная информатика">
     <meta name="author" content="Елшанский Владимир">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+    <link rel="stylesheet" href="style.css">
     <title>Лабораторная 2</title>
     <style>
-      body {
-        font-family: Arial, Helvetica, sans-serif;
-        margin: 0 auto;
-        max-width: 900px;
-      }
-
-      h2,
-      h3 {
-        font-weight: lighter;
-      }
-
-      nav {
-        padding-bottom: 15px;
-      }
-
-      nav a {
-        transition: all 0.2s;
-        padding: 5px 20px;
-        border: 1px solid black;
-        text-decoration: none;
-        color: black;
-      }
-
-      nav a:hover {
-        transition: all 0.2s;
-        color: white;
-        background-color: gray;
-      }
-
-      nav a.current {
-        text-decoration: underline;
-      }
 
       .info {
         display: flex;
@@ -54,9 +24,6 @@
         padding-bottom: 10px;
       }
 
-      img {
-        max-width: 275px;
-      }
     </style>
   </head>
   <body>
@@ -112,9 +79,32 @@
           </div>
         </div>
         <div class="info__column">
-          <img src="https://sun9-west.userapi.com/sun9-64/s/v1/ig2/MLVKYZVhb6PU9gOaIdJiv8DpE_4cz2s-_2OlhhqJ_lAi1u7nXHFdeQkvlnPIC8VLVAm7DqS8pN9Ko70cBmj9YKI-.jpg?size=721x1080&quality=95&type=album" alt="">
+          <img style="max-width: 275px;" src="https://sun9-west.userapi.com/sun9-64/s/v1/ig2/MLVKYZVhb6PU9gOaIdJiv8DpE_4cz2s-_2OlhhqJ_lAi1u7nXHFdeQkvlnPIC8VLVAm7DqS8pN9Ko70cBmj9YKI-.jpg?size=721x1080&quality=95&type=album" alt="">
         </div>
       </div>
     </main>
+    <footer>
+      Футер сайта...
+      <div class="anim"></div>
+    </footer>
+    <style>
+      .anim {
+        width: 50px;
+        height: 50px;
+        background-color: red;
+        animation-name: example;
+        animation-duration: 4s;
+        animation-iteration-count: 999;
+        margin-top: 25px;
+      }
+
+      @keyframes example {
+        0%   {background-color:red; left:0px; top:0px;}
+        25%  {background-color:yellow; left:200px; top:0px;}
+        50%  {background-color:blue; left:200px; top:200px;}
+        75%  {background-color:green; left:0px; top:200px;}
+        100% {background-color:red; left:0px; top:0px;}
+      }
+    </style>
   </body>
 </html>
