@@ -1,110 +1,148 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Сайт-визитка по второй лабораторной работе дисциплины Интернет технологии">
-    <meta name="keywords" content="Интернет технологии, лабораторная, сайт, АПИБ-22, Прикладная информатика">
-    <meta name="author" content="Елшанский Владимир">
-    <link rel="icon" type="image/x-icon" href="favicon.png">
-    <link rel="stylesheet" href="style.css">
-    <title>Лабораторная 2</title>
-    <style>
+<html lang="en">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="My%20portfolio_files/bootstrap.min.css">
+        <link rel="stylesheet" href="My%20portfolio_files/fonts.css">
+        <title>Denis Novik</title>
+    </head>
+    <body>
+        <header id="header" class="header">
 
-      .info {
-        display: flex;
-        justify-content: space-between;
-      }
+            <div class="header-btn container">
+                <a href="#"><span></span></a>
+            </div>
+            <div id="navbar" class="header-nav container">
+                <ul>
+                    <li class="selected">
+                        <a href="#header" class="go_to">Home</a>
+                    </li>
+                    <li>
+                        <a href="#about" class="go_to">About me</a>
+                    </li>
+                    <li>
+                        <a href="#skills" class="go_to">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio" class="go_to">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#footer" class="go_to">Contacts</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header-desc container">
+                <h1 class="header-title">Denis Novik
+                </h1>
+                <h3 class="header-subtitle">UX | UI designer <br> 24 years old, Minsk</h3>
+                <ul>
+                    <li>
+                        <a href="#">RU</a>
+                    </li>
+                    <li>|</li>
+                    <li class="selected">
+                        <a href="#">ENG</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="header_wrapper-img">
+                <div class="header-img container">
+                <img src="images/main.png" alt="">
+                </div>
+            </div>
 
-      .info__block {
-        display: grid;
-        grid-template-columns: 200px 200px;
-        padding-left: 20px;
-        padding-bottom: 10px;
-      }
-
-    </style>
-  </head>
-  <body>
-    <header>
-      <h1>Моя визитная карточка</h1>
-      <nav>
-        <a class="current" href="#">Главная</a>
-        <a href="Interests.html">Увлечения</a>
-        <a href="Contacts.html">Контакты</a>
-      </nav>
-    </header>
-    <main class="main">
-      <h2>Елшанский Владимир</h2>
-      <div class="info">
-        <div class="info__column">
-          <h3>Информация</h3>
-          <div class="info__block">
-            <b>Направление подготовки</b>
-            <span>Разработка компьютерных игр и AR/VR-приложений</span>
-          </div>
-          <div class="info__block">
-            <b>Профиль</b>
-            <span>---</span>
-          </div>
-          <div class="info__block">
-            <b>Дата рождения</b>
-            <time datetime="2004-10-06T22:10">6 октября 2004</time>
-          </div>
-          <div class="info__block">
-            <b>Школа</b>
-            <span>Многопрофильный лицей №1</span>
-          </div>
-          <div class="info__block">
-            <b>Город рождения</b>
-            <span>Магнитогорск</span>
-          </div>
-          <h3>Контакты</h3>
-          <div class="info__block">
-            <b>Телефон</b>
-            <a href="tel:+79193054714">+79193054714</a>
-          </div>
-          <div class="info__block">
-            <b>Почта</b>
-            <a href="mailto:vendetta_gt@mail.ru">vendetta_gt@mail.ru</a>
-          </div>
-          <div class="info__block">
-            <b>ВК</b>
-            <a href="https://vk.com/avoideyecontact">Елшанский Владимир</a>
-          </div>
-          <div class="info__block">
-            <b>GitHub</b>
-            <a href="https://github.com/avoideyecontact">avoideyecontact</a>
-          </div>
-        </div>
-        <div class="info__column">
-          <img style="max-width: 275px;" src="https://sun9-west.userapi.com/sun9-64/s/v1/ig2/MLVKYZVhb6PU9gOaIdJiv8DpE_4cz2s-_2OlhhqJ_lAi1u7nXHFdeQkvlnPIC8VLVAm7DqS8pN9Ko70cBmj9YKI-.jpg?size=721x1080&quality=95&type=album" alt="">
-        </div>
-      </div>
-    </main>
-    <footer>
-      Футер сайта...
-      <div class="anim"></div>
-    </footer>
-    <style>
-      .anim {
-        width: 50px;
-        height: 50px;
-        background-color: red;
-        animation-name: example;
-        animation-duration: 4s;
-        animation-iteration-count: 999;
-        margin-top: 25px;
-      }
-
-      @keyframes example {
-        0%   {background-color:red; left:0px; top:0px;}
-        25%  {background-color:yellow; left:200px; top:0px;}
-        50%  {background-color:blue; left:200px; top:200px;}
-        75%  {background-color:green; left:0px; top:200px;}
-        100% {background-color:red; left:0px; top:0px;}
-      }
-    </style>
-  </body>
+        </header>
+        <section id="about" class="about container">
+            <h2 class="title">About me</h2>
+            <p>Hi, I'm Denis – UX/UI designer from Minsk. I'm interested in design and everything connected with it.
+            </p>
+            <p>I'm studying at courses "Web and mobile design interfaces" in IT-Academy.</p>
+            <p>Ready to implement excellent projects <br> with wonderful people.</p>
+        </section>
+        <section id="skills" class="skills container">
+            <h2 class="title">Skills</h2>
+            <p class="skills_subtitle">I work in such programs as</p>
+            <div class="skills_wrapper">
+                <div class="skills_programs">
+                    <img src="images/photoshop.png" alt="" class="skills_programs-img">
+                    <small>Adobe <br> photoshop</small>
+                    <div class="skills_star-rating">
+                        <img src="images/Star-black.png" alt="star img">
+                        <img src="images/Star-black.png" alt="star img">
+                        <img src="images/Star-black.png" alt="star img">
+                        <img src="images/Star-black.png" alt="star img">
+                        <img src="images/Star-grey.png" alt="star img">
+                    </div>
+                </div>
+                <div class="skills_programs">
+                    <img src="images/AI.png" alt="" class="skills_programs-img">
+                    <small>Adobe <br>
+                        Illustrator</small>
+                    <div class="skills_star-rating">
+                        <img src="images/Star-black.png" alt="star img">
+                        <img src="images/Star-black.png" alt="star img">
+                        <img src="images/Star-black.png" alt="star img">
+                        <img src="images/Star-grey.png" alt="star img">
+                        <img src="images/Star-grey.png" alt="star img">
+                    </div>
+                </div>
+                <div class="skills_programs">
+                    <img src="images/AE.png" alt="" class="skills_programs-img">
+                    <small>Adobe <br>
+                        After Effects</small>
+                    <div class="skills_star-rating">
+                        <img src="images/Star-black.png" alt="star img">
+                        <img src="images/Star-black.png" alt="star img">
+                        <img src="images/Star-black.png" alt="star img">
+                        <img src="images/Star-black.png" alt="star img">
+                        <img src="images/Star-grey.png" alt="star img">
+                    </div>
+                </div>
+                <div class="skills_programs">
+                    <img src="images/Figma.png" alt="" class="skills_programs-img">
+                    <small>Figma</small>
+                    <div class="skills_star-rating">
+                        <img src="images/Star-black.png" alt="star img">
+                        <img src="images/Star-black.png" alt="star img">
+                        <img src="images/Star-black.png" alt="star img">
+                        <img src="images/Star-black.png" alt="star img">
+                        <img src="images/Star-grey.png" alt="star img">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="portfolio" class="portfolio ">
+            <h2 class="title">Portfolio</h2>
+            <div class="portfolio_item">
+                <img src="images/portfolio-img1.jpg" alt="">
+                <a href="#" class="pirtfolio_item-link">Online fashion store - Homepage</a>
+            </div>
+            <div class="portfolio_item">
+                <img src="images/portfolio-img2.jpg" alt="">
+                <a href="#" class="pirtfolio_item-link">Reebok Store - Concept</a>
+            </div>
+            <div class="portfolio_item">
+                <img src="images/portfolio-img3.jpg" alt="">
+                <a href="#" class="pirtfolio_item-link">Braun Landing Page - Concept</a>
+            </div>
+        </section>
+        <footer id="footer" class="footer container">
+            <h2 class="title">Contacts</h2>
+            <p class="footer_subtitle">Want to know more or just chat? You are welcome!</p>
+            <div class="footer_btn"><a href="#">Send message</a></div>
+            <div class="footer_social-links">
+                <a href="#"><i class="icon-linkedin"></i></a>
+                <a href="#"><i class="icon-instagram"></i></a>
+                <a href="#"><i class="icon-behance"></i></a>
+                <a href="#"><i class="icon-dribble"></i></a>
+            </div>
+            <small>Like me on <br>
+                LinkedIn, Instagram, Behance, Dribble
+            </small>
+        </footer>
+    </body>
 </html>
