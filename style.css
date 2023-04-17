@@ -28,11 +28,12 @@ body {
   max-width: 1000px; /* !!! */
 }
 
+main {
+  min-height: calc(100vh - 160px);
+}
+
 .footer {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  margin-left: -500px; /* !!! */
+  height: 25px;
 }
 
 .nav {
@@ -87,6 +88,72 @@ cite {
 .three img {
   max-width: 100%;
   box-shadow: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+textarea {
+  min-width: 350px;
+  min-height: 100px;
+}
+
+button {
+  padding: 15px 100px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.agreement {
+  margin: 0 auto;
+  padding: 25px;
+}
+
+.form-div-1 {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+
+.form-div-1 input {
+  width: 275px;
+  padding: 25px;
+  color: black;
+  font-size: 16px;
+  border: 1px solid black;
+}
+
+.form-div-2 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.form-div-3 {
+  display: flex;
+  justify-content: center;
+}
+
+.form-div-3, .form-div-4 {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  padding-bottom: 30px;
+}
+
+.form-div-5 {
+  display: flex;
+  justify-content: space-around;
+}
+
+main iframe {
+  margin-top: 40px;
+  width: 100%;
+  height: 125px;
+  border-radius: 15px;
 }
 
 @media (max-width: 999px) {
