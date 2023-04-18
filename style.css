@@ -159,6 +159,20 @@ main iframe {
   border-radius: 15px;
 }
 
+.examples-div {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 50px;
+}
+
+.examples-div img {
+  height: 350px;
+}
+
+.examples-list li {
+  padding-bottom: 10px;
+}
+
 .howitworks {
   
  display: flex;
@@ -249,6 +263,14 @@ main iframe {
 
   .form-div-5 button {
     width: 100%;
+  }
+
+  .examples-div {
+    flex-direction: column;
+  }
+  
+  .examples-div img {
+    height: 350px;
   }
 }
 @media (min-width: 1000px) and (max-width: 1599px) {
