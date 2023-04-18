@@ -105,6 +105,9 @@ button {
   padding: 15px 100px;
   margin: 0 auto;
   cursor: pointer;
+  color: white;
+  background: rgb(255,255,255);
+  background: linear-gradient(138deg, rgba(255,255,255,1) 0%, rgba(170,170,170,1) 50%, rgba(255,255,255,1) 100%); 
 }
 
 .agreement {
@@ -156,6 +159,17 @@ main iframe {
   border-radius: 15px;
 }
 
+.howitworks {
+  
+ display: flex;
+ justify-content: space-between;
+ column-gap: 75px;
+}
+
+.howitworks img {
+  height: 350px;
+}
+
 @media (max-width: 999px) {
   .nav {
     padding: 0;
@@ -200,6 +214,41 @@ main iframe {
     margin-left: 0;
     left: 0;
     bottom: 10px;
+  }
+
+  .howitworks {
+    flex-direction: column;
+  }
+
+  .howitworks img {
+    height: 250px;
+  }
+
+  .form-div-1 {
+    flex-direction: column;
+    margin: 0 auto;
+    row-gap: 10px;
+  }
+
+  .form-div-2 {
+    flex-direction: column;
+  }
+
+  .form-div-2 textarea {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .form-div-5 {
+    flex-direction: column;
+  }
+
+  .form-div-4 {
+    padding-bottom: 0;
+  }
+
+  .form-div-5 button {
+    width: 100%;
   }
 }
 @media (min-width: 1000px) and (max-width: 1599px) {
