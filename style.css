@@ -21,11 +21,42 @@
 body {
   font-family: Gilroy;
   font-size: 16px;
+  padding: 10px;
 }
 
 .center {
   margin: 0 auto;
   max-width: 1000px; /* !!! */
+}
+
+.main h1 {
+  font-size: 40px;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.filter {
+  display: flex;
+  gap: 5px;
+}
+
+.items {
+  padding: 40px 0 100px 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+}
+
+footer {
+  padding-top: 40px;
+}
+
+.jumbotron {
+  padding-bottom: 50px;
+}
+
+.carousel-item {
+  height: 500px;
 }
 
 @media (max-width: 999px) {
